@@ -4,27 +4,33 @@ import { Navbar, NavbarBrand } from 'reactstrap';
 import Home from './components/HomeComponent';
 import Details from './components/DetailsComponent';
 import Quiz from './components/QuizComponent';
+import Result from './components/ResultComponent';
 
 function App() {
   const [page, setPage] = useState("home");
+  const [name, setName] = useState("Guest");
   const [score, setScore] = useState(0);
 
   function renderPage() {
-    if (page=="home") {
+    if (page==="home") {
       return(
         <Home setPage={setPage}/>
       );
-    } else if (page=="details") {
+    } else if (page==="details") {
       return(
-        <Details setPage={setPage}/>
+        <Details setPage={setPage} setName={setName}/>
       );
-    } else if (page=="quiz") {
+    } else if (page==="quiz") {
       return(
-        <Quiz setPage={setPage} setScore={setScore}/>
+        <Quiz name={name} setPage={setPage} setScore={setScore}/>
+      );
+    } else if (page==="result") {
+      return(
+        <Result name={name} score={score} setPage={setPage}/>
       );
     } else
       return(
-        <div>Error 404 Page Not Found</div>
+        <div>Page not implemented yet</div>
       );
   }
 

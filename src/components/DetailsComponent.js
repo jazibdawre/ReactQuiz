@@ -9,7 +9,7 @@ function Details(props) {
             <Label for="title"><h2>Participant Details</h2></Label>
             <FormGroup>
               <Label for="name">Full Name</Label>
-              <Input type="text" name="name" id="name" placeholder="Full Name"/>
+              <Input type="text" name="name" id="name" placeholder="Full Name" onChange={event => props.setName(event.target.value)}/>
             </FormGroup>
             <FormGroup>
               <Label for="email">Email</Label>

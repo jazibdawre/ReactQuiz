@@ -1,0 +1,38 @@
+{
+	"questions": [{
+		"q": " Galileo was an astronomer who",
+		"a": "developed the telescope",
+		"b": "discovered four satellites of Jupiter",
+		"c": "discovered that the movement of pendulum produces a regular time measurement",
+		"d": "All the above",
+		"ans": "b"
+	}, {
+		"q": "The world smallest country is",
+		"a": "Canada",
+		"b": "Monaco",
+		"c": "Maldives",
+		"d": "Vatican City",
+		"ans": "d"
+	}, {
+		"q": "The currency notes are printed in",
+		"a": "New Delhi",
+		"b": "Nasik",
+		"c": "Nagpur",
+		"d": "Bombay",
+		"ans": "b"
+	}, {
+		"q": "Novak Djokovic is a famous player associated with the game of",
+		"a": "Hockey",
+		"b": "Football",
+		"c": "Chess",
+		"d": "Lawn Tennis",
+		"ans": "c"
+	}, {
+		"q": "What is the second largest country (in size) in the world?",
+		"a": "Canada",
+		"b": "USA",
+		"c": "China",
+		"d": "Russia",
+		"ans": "a"
+	}]
+}
