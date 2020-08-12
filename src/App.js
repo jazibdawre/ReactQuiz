@@ -30,7 +30,7 @@ function App() {
       );
     } else
       return(
-        <div>Page not implemented yet</div>
+      <div>Page not implemented. Route: {page}</div>
       );
   }
 

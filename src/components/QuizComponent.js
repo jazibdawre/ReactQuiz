@@ -67,7 +67,7 @@ class Quiz extends Component {
             return (
                 <div>
                     <Button onClick={() => this.handlePrev()}>Previous</Button>{'  '}
-                    <Button onClick={() => this.handleSubmit()}>Submit</Button>
+                    <Button color="success" onClick={() => this.handleSubmit()}>Submit</Button>
                 </div>
             );
         } else {
@@ -88,7 +88,7 @@ class Quiz extends Component {
                     <Label for="user"><h3>user:{' '}{this.props.name}</h3></Label>
                 </div>
                 <FormGroup>
-                    <Label for="Questions"><h5>Q. {questions.questions[this.state.currentquestion-1].q}</h5></Label>
+                    <Label for="Questions"><h5>Q{this.state.currentquestion}. {questions.questions[this.state.currentquestion-1].q}</h5></Label>
                     <FormGroup check>
                         <Label check>
                             <Input type="radio" name="answer" value="a" checked={this.state.answers[this.state.currentquestion-1] === "a"} onChange={this.handleChange}/>{' '}
@@ -115,6 +115,9 @@ class Quiz extends Component {
                     </FormGroup>
                 </FormGroup>
                 {this.renderControls()}
+                <div class="d-flex justify-content-end my-3">
+                    <Button color="danger" onClick={() => this.props.setPage("home")}>Exit</Button>
+                </div>
             </Form>
         );
     }

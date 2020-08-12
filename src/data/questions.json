@@ -1,9 +1,9 @@
 {
 	"questions": [{
 		"q": " Galileo was an astronomer who",
-		"a": "developed the telescope",
-		"b": "discovered four satellites of Jupiter",
-		"c": "discovered that the movement of pendulum produces a regular time measurement",
+		"a": "Developed the telescope",
+		"b": "Discovered four satellites of Jupiter",
+		"c": "Discovered that the movement of pendulum produces a regular time measurement",
 		"d": "All the above",
 		"ans": "b"
 	}, {
@@ -26,7 +26,7 @@
 		"b": "Football",
 		"c": "Chess",
 		"d": "Lawn Tennis",
-		"ans": "c"
+		"ans": "d"
 	}, {
 		"q": "What is the second largest country (in size) in the world?",
 		"a": "Canada",
